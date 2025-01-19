@@ -125,26 +125,25 @@ const Contact = () => {
         <p className={styles.sectionSubText}>A tus ordenes 🙋🏻‍♂️</p>
         <h3 className={styles.sectionHeadText}>Contactame</h3>
 
-
-
-        <div className="mt-4 flex gap-4">
-          <h2 className="text-white text-lg mt-4">{email}</h2>
+        <div className="mt-6 flex flex-col sm:flex-row gap-4 items-center">
+          <h2 className="text-white text-lg mt-2 sm:mt-4">{email}</h2>
           <button
             onClick={handleSendEmail}
-            className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+            className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 w-full sm:w-auto"
           >
             Email
           </button>
           <FiCopy
-            className="text-white cursor-pointer hover:text-gray-300 mt-4"
+            className="text-white cursor-pointer hover:text-gray-300 mt-2 sm:mt-4"
             size={24}
             onClick={handleCopyEmail}
             title="Copy Email"
           />
         </div>
 
-        <div className="mt-4 flex gap-4">
-          <h2 className="text-white text-lg mt-4">{phone}</h2>
+
+        <div className="mt-6 flex flex-col sm:flex-row gap-4 items-center">
+          <h2 className="text-white text-lg mt-2 sm:mt-4">{phone}</h2>
           <button
             onClick={handleSendWhatsapp}
             className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-blue-600"
@@ -152,20 +151,20 @@ const Contact = () => {
             Whatsapp
           </button>
           <FiCopy
-            className="text-white cursor-pointer hover:text-gray-300 mt-4"
+            className="text-white cursor-pointer hover:text-gray-300 mt-2 sm:mt-4"
             size={24}
             onClick={handleCopyPhone}
             title="Copy Phone"
           />
         </div>
 
-        <div className="mt-6 flex gap-4">
+        <div className="mt-6 flex flex-col sm:flex-row gap-4 items-center">
           {/* YouTube Button */}
           <a
             href="https://www.youtube.com/@irvingrocha2613"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600"
+            className="flex items-center gap-2 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 w-full sm:w-auto"
           >
             <FaYoutube size={20} />
             YouTube
@@ -176,7 +175,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/irving-rocha-resendiz-78533a79/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800"
+            className="flex items-center gap-2 px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 w-full sm:w-auto"
           >
             <FaLinkedin size={20} />
             LinkedIn
@@ -187,12 +186,13 @@ const Contact = () => {
             href="https://github.com/thevepxr24"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900"
+            className="flex items-center gap-2 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 w-full sm:w-auto"
           >
             <FaGithub size={20} />
             GitHub
           </a>
         </div>
+
       </motion.div>
     </div>
   );

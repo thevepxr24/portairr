@@ -51,7 +51,7 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
 
 const Works = () => {
   return (
-    <>
+    <div style={{width:"100%", alignItems:"center"}}>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>Mis trabajos</p>
         <h2 className={`${styles.sectionHeadText}`}>Proyectos</h2>
@@ -68,7 +68,7 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} {...project} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { close, logo, menu,me } from '../assets';
+import { close, logo, menu, me } from '../assets';
 import { navLinks } from '../constants';
 import { styles } from '../styles';
-import resume from "../assets/CV_IrvingRocha.pdf"; 
+import resume from "../assets/CV_IrvingRocha.pdf";
 
 const Navbar = () => {
   const [active, setActive] = useState('');
@@ -20,13 +20,15 @@ const Navbar = () => {
   }, [toggle]);
 
   const renderNavLinks = (isSecondary) => (
-    <ul className={`list-none ${isSecondary ? 'flex sm:hidden' : 'hidden sm:flex'} flex-row gap-6`}>
+    <ul
+      className={`list-none ${isSecondary ? 'flex sm:hidden' : 'hidden sm:flex'
+        } flex-col sm:flex-row gap-4 sm:gap-6 border border-green-500 bg-black bg-opacity-70 p-4 rounded-lg`}
+    >
       {navLinks.map((link) => (
         <li
           key={link.id}
-          className={`${
-            active === link.title ? 'text-white' : isSecondary ? 'text-secondary' : 'text-white'
-          } hover:text-white text-[20px] font-medium cursor-pointer`}
+          className={`${active === link.title ? 'text-white' : isSecondary ? 'text-secondary' : 'text-white'
+            } hover:text-green-500 text-[16px] sm:text-[20px] font-medium cursor-pointer`}
           onClick={() => {
             setActive(link.title);
             if (isSecondary) {
@@ -38,9 +40,8 @@ const Navbar = () => {
         </li>
       ))}
       <li
-        className={`text-${
-          isSecondary ? 'secondary' : 'green'
-        } hover:text-green text-[20px] font-medium cursor-pointer`}
+        className={`text-${isSecondary ? 'secondary' : 'green'
+          } hover:text-green text-[20px] font-medium cursor-pointer`}
       >
         <button onClick={toggleResume}>Curriculum</button>
       </li>
@@ -61,7 +62,7 @@ const Navbar = () => {
               window.scrollTo(0, 0);
             }}
           >
-            <img src={me} alt="logo" className="w-9 h-9 object-contain" style={{borderRadius:"2rem"}}/>
+            <img src={me} alt="logo" className="w-9 h-9 object-contain" style={{ borderRadius: "2rem" }} />
             <p className="text-white text-[20px] font-bold cursor-pointer flex">
               Irving&nbsp;
               <span className="sm:block hidden">Rocha Reséndiz</span>
@@ -76,9 +77,8 @@ const Navbar = () => {
               onClick={() => setToggle(!toggle)}
             />
             <div
-              className={`p-4 black-gradient absolute top-14 right-0 mx-2 my-2 min-w-[120px] z-10 rounded-xl foggy-glass ${
-                toggle ? 'flex' : 'hidden'
-              }`}
+              className={`p-4 black-gradient absolute top-14 right-0 mx-2 my-2 min-w-[120px] z-10 rounded-xl foggy-glass ${toggle ? 'flex' : 'hidden'
+                }`}
             >
               {renderNavLinks(true)}
             </div>

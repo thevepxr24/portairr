@@ -50,9 +50,13 @@ const About = () => {
           style={{padding:"1rem"}}
         >
           Soy desarrollador de software con una profunda pasión por la tecnología y la ciencia.
+          Me apasiona programar videojuegos en los motores gráficos como Unity y Unreal Engine. He lanzado videojuegos para casinos en Norteamérica con gran popularidad.
+          Tambien he lanzado demos de videojuegos para Oculus Quest y algunos móbiles.
+          Me gusta impartir catedra sobre desarrollo y diseño de videojuegos.
+          <br></br>
+          <br></br>
           He desarrollado aplicaciones con un enfoque en el impacto social, realizando análisis de carencias
-          y oportunidades en comunidades vulnerables. Mi trabajo ha contribuido a la formulación de estrategias
-          políticas y a la implementación de soluciones efectivas para mejorar la calidad de vida de estas comunidades.
+          y oportunidades en comunidades vulnerables.
           <br/>
           <br/>
           He colaborado con equipos interdisciplinarios compuestos por profesionales de diversas culturas y especialidades.
