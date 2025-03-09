@@ -1,5 +1,6 @@
 import me from "./me/me.jpg";
 import movimientociudadano from "./me/mc.jpeg";
+import hexawareTechnologis from "./me/hexaware.jpg";
 import dreidel from "./me/dreidel.png";
 import poderjudicial from "./me/poderjudicial.png";
 import sae from "./me/sae.png";
@@ -78,6 +79,7 @@ export {
   csharp,
   me,
   movimientociudadano,
+  hexawareTechnologis,
   dreidel,
   poderjudicial,
   sap,

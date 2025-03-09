@@ -14,6 +14,7 @@ import {
   threejs,
   csharp,
   movimientociudadano,
+  hexawareTechnologis,
   dreidel,
   poderjudicial,
   springboot,
@@ -84,7 +85,20 @@ export const technologies = [
   { name: "MongoDB", icon: mongodb },
 ];
 
-export const universities = [
+export const universities = [  
+  {
+    title: "Maestría en Desarrollo y Programación de Videojuegos",
+    company_name: "Universidad de Morelia | UDEM",
+    icon: udem,
+    iconBg: "#161329",
+    date: "Agosto 2021 - Agosto 2023",
+    points: [
+      "Curse la maestria en Desarrollo de Videojuegos con Unity 3D y Unreal Engine.",
+      "Obtuve la calificación máxima de 10",
+      "Gestión de Proyectos con PMI ",
+      "Realidad Virtual con Oculus",
+    ],
+  },
   {
     title: "Ingeniero en Computación",
     company_name: "Universidad Nacional Autónoma de México | UNAM",
@@ -124,19 +138,6 @@ export const universities = [
       "Programación de Videojuegos con Unity 3D y C#",
     ],
   },
-  {
-    title: "Maestría en Desarrollo y Programación de Videojuegos",
-    company_name: "Universidad de Morelia | UDEM",
-    icon: udem,
-    iconBg: "#161329",
-    date: "Agosto 2021 - Agosto 2023",
-    points: [
-      "Curse la maestria en Desarrollo de Videojuegos con Unity 3D y Unreal Engine.",
-      "Obtuve la calificación máxima de 10",
-      "Gestión de Proyectos con PMI ",
-      "Realidad Virtual con Oculus",
-    ],
-  },
 ]
 
 
@@ -146,12 +147,26 @@ export const experiences = [
     company_name: "Movimiento Ciudadano",
     icon: movimientociudadano,
     iconBg: "#161329",
-    date: "Marzo 2022 - Diciembre 2024",
+    date: "Enero 2023 - Diciembre 2024",
     points: [
       "Desarrollo de paginas Web con las tecnologias de React, Angular y Javascript. Creacion de API y end points con java, Net Core. Bases de datos con MySQL.",
       "Implementación de Inteligencia geoespacial politica desplegada en paginas web para focalizar sociedades con vulnerabilidades en busca de oportunidades para el partido.",
       "Registro de aspirantes a candidaturas a nivel nacional y conteo de respaldos a los mismos. Participe en la creacion del Metaverso Naranja para el registro y computo de respaldos y firmas electronicas para los candidatos a nivel nacional.",
       "Gerente del Area de Soporte Tecnico y difusion de campañas a traves de redes sociales y bots de campañas."
+    ],
+  },
+  {
+    title: "Fullstack Developer Java",
+    company_name: "Hexaware Technologies",
+    icon: hexawareTechnologis,
+    iconBg: "#161329",
+    date: "Marzo 2022 - Diciembre 2022",
+    points: [
+      "Desarrollo de aplicaciones web con Java y Springboot.",
+      "Creación de microservicios RESTful",
+      "Desarrollo de aplicaciones web con Angular y React.",
+      "Creacion de pruebas unitarias y de integración.",
+      "Servicios de consultoria para la industria Hipotecaria Fannie Mac en Estados Unidos"
     ],
   },
   {
