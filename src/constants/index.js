@@ -143,7 +143,7 @@ export const universities = [
 
 export const experiences = [
   {
-    title: "Fullstack Developer",
+    title: "Backend Developer",
     company_name: "Movimiento Ciudadano",
     icon: movimientociudadano,
     iconBg: "#161329",
@@ -156,7 +156,7 @@ export const experiences = [
     ],
   },
   {
-    title: "Fullstack Developer Java",
+    title: "Backend Developer Java",
     company_name: "Hexaware Technologies",
     icon: hexawareTechnologis,
     iconBg: "#161329",
