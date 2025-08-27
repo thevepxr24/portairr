@@ -27,6 +27,8 @@ import {
   intellij,
   sourcetree,
   mongodb,
+  blender,
+  omniverse,
   sae,
   unam,
   diplodb,
@@ -37,7 +39,7 @@ import {
   sascabinet,
   slots,
   bingos,
-  zombilaquita
+  zombilaquita,
 } from "../assets";
 
 export const navLinks = [
@@ -83,6 +85,8 @@ export const technologies = [
   { name: "IntelliJ", icon: intellij },
   { name: "Sourcetree", icon: sourcetree },
   { name: "MongoDB", icon: mongodb },
+  { name: "Blender", icon: blender },
+  { name: "Omniverse", icon: omniverse }, 
 ];
 
 export const universities = [  
@@ -97,18 +101,6 @@ export const universities = [
       "Obtuve la calificación máxima de 10",
       "Gestión de Proyectos con PMI ",
       "Realidad Virtual con Oculus",
-    ],
-  },
-  {
-    title: "Ingeniero en Computación",
-    company_name: "Universidad Nacional Autónoma de México | UNAM",
-    icon: unam,
-    iconBg: "#161329",
-    date: "Agosto 2012 - Diciembre 2016",
-    points: [
-      "Estudie la carrera de Ingenieria en Computación en la Facultad de Ingeniería.",
-      "Me especialice en las materias de Computación Gráfica e Inteligencia Artificial.",
-      "Participe en proyectos extracurriculares con los grupos de: Sodvi(Sociedad de desarrollo de Videojuegos), BioRobotics Facultad de Ingeniería",
     ],
   },
   {
@@ -138,6 +130,19 @@ export const universities = [
       "Programación de Videojuegos con Unity 3D y C#",
     ],
   },
+  {
+    title: "Ingeniero en Computación",
+    company_name: "Universidad Nacional Autónoma de México | UNAM",
+    icon: unam,
+    iconBg: "#161329",
+    date: "Agosto 2012 - Diciembre 2016",
+    points: [
+      "Estudie la carrera de Ingenieria en Computación en la Facultad de Ingeniería.",
+      "Me especialice en las materias de Computación Gráfica e Inteligencia Artificial.",
+      "Participe en proyectos extracurriculares con los grupos de: Sodvi(Sociedad de desarrollo de Videojuegos), BioRobotics Facultad de Ingeniería",
+    ],
+  },
+
 ]
 
 
@@ -147,7 +152,7 @@ export const experiences = [
     company_name: "Movimiento Ciudadano",
     icon: movimientociudadano,
     iconBg: "#161329",
-    date: "Enero 2023 - Diciembre 2024",
+    date: "Enero 2023 - Hoy",
     points: [
       "Desarrollo de paginas Web con las tecnologias de React, Angular y Javascript. Creacion de API y end points con java, Net Core. Bases de datos con MySQL.",
       "Implementación de Inteligencia geoespacial politica desplegada en paginas web para focalizar sociedades con vulnerabilidades en busca de oportunidades para el partido.",

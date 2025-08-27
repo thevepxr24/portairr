@@ -39,8 +39,10 @@ import postgresql from "./tech/postgresql.png";
 import azure from "./tech/azure.png";
 import visualstudio from "./tech/visualstudio.png";
 import intellij from "./tech/intellij.png";
+import blender from "./tech/blender.png";
 import sourcetree from "./tech/sourcetree.png";
 import mongodb from "./tech/mongodb.png";
+import omniverse from "./tech/omniverse.png";
 
 
 // Import common assets
@@ -99,5 +101,7 @@ export {
   sascabinet,
   slots,
   bingos,
-  zombilaquita
+  zombilaquita,
+  blender,
+  omniverse
 };
