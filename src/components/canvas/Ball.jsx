@@ -5,7 +5,7 @@ import CanvasLoader from "../Loader";
 
 const LegoWithDecal = React.memo(({ iconUrl, name }) => {
   const decalTexture = useTexture(iconUrl);
-  const { nodes } = useGLTF('/models/lego_head.glb');
+  const { nodes } = useGLTF('./models/lego_head.glb');
 
   const meshRef = useRef();
 
