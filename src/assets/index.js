@@ -43,6 +43,7 @@ import blender from "./tech/blender.png";
 import sourcetree from "./tech/sourcetree.png";
 import mongodb from "./tech/mongodb.png";
 import omniverse from "./tech/omniverse.png";
+import angular from "./tech/angular.png";
 
 
 // Import common assets
@@ -103,5 +104,6 @@ export {
   bingos,
   zombilaquita,
   blender,
-  omniverse
+  omniverse,
+  angular
 };

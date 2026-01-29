@@ -62,7 +62,7 @@ const Navbar = () => {
               window.scrollTo(0, 0);
             }}
           >
-            <img src={me} alt="logo" className="w-9 h-9 object-contain" style={{ borderRadius: "2rem" }} />
+            <img src={me} alt="logo" className="w-9 h-9 object-cover rounded-full border-2 border-gray-300"/>
             <p className="text-white text-[20px] font-bold cursor-pointer flex">
               Irving&nbsp;
               <span className="sm:block hidden">Rocha Reséndiz</span>

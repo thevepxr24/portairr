@@ -40,6 +40,7 @@ import {
   slots,
   bingos,
   zombilaquita,
+  angular,
 } from "../assets";
 
 export const navLinks = [
@@ -67,12 +68,13 @@ export const services = [
   { title: "Python", icon: python },
   { title: "Java", icon: java },
   { title: "Javascript", icon: javascript },
+  { title: "Springboot", icon: springboot },
+  { title: "React", icon: reactjs },
+  { title: "Angular", icon: angular },
 ];
 
 export const technologies = [
-  { name: "React", icon: reactjs },
   { name: "Node JS", icon: nodejs },
-  { name: "Springboot", icon: springboot },
   { name: "git", icon: git },
   { name: "Unity 3D", icon: unity },
   { name: "Unreal Engine", icon: unreal },

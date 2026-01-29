@@ -20,21 +20,31 @@ const LegoWithDecal = React.memo(({ iconUrl, name }) => {
       <mesh
         geometry={head.geometry}
         material={head.material}
-        scale={2.5}
+        scale={3.0}
         onPointerOver={() => setHovered(true)}
         onPointerOut={() => setHovered(false)}
       >
         <Decal
 
-          position={[0.0, 0.5, 0.2]}
+          position={[0.0, 0.5, 0.25]}
           rotation={[2 * Math.PI, 0, 6.25]}
           scale={0.75}
           map={decalTexture}
           flatShading
         />
 
+        <Decal
+          position={[0.0, 0.5, -0.25]}
+          rotation={[0, Math.PI, 6.25]}
+          scale={0.75}
+          map={decalTexture}
+          flatShading
+          
+        />
+        
+
         {hovered && (
-          <Html position={[0, 0.8, 0]} center>
+          <Html position={[0.0, 0.8, -5.0]} center>
             <div className="tooltip"><h2>{name}</h2></div>
           </Html>
         )}
@@ -58,7 +68,7 @@ const Ball = React.memo(({ iconUrl }) => {
 
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial color='#fff8eb' polygonOffset polygonOffsetFactor={-5} flatShading />
-        <Decal position={[0, 0, 1]} rotation={[2 * Math.PI, 0, 6.25]} scale={1} map={decal} flatShading />
+        <Decal position={[0.5, 0.5, 2]} rotation={[2 * Math.PI, 0, 6.25]} scale={2} map={decal} flatShading />
       </mesh>
     </Float>
   );
